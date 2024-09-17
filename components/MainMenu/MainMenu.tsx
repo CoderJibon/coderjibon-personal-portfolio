@@ -9,7 +9,7 @@ function MainMenu() {
       {Menu.map((menu) => (
         <Link
           key={menu.id}
-          className="text-white font-helvetica text-base font-semibold relative flex  items-center  justify-center w-fit "
+          className="text-white dark:text-success font-helvetica text-base font-semibold relative flex hover:text-primary dark:hover:text-primary  items-center  justify-center w-fit "
           href={menu.url}
         >
           <span className="text-xl absolute -left-[30px] hidden lg:block ">
@@ -17,7 +17,7 @@ function MainMenu() {
           </span>
           <p
             className={`menuItem ${
-              pathName === menu.url ? "after:scale-x-100" : ""
+              pathName === menu.url ? "after:scale-x-100 text-primary" : ""
             } `}
           >
             {menu.label}

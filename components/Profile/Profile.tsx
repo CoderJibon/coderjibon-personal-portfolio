@@ -2,7 +2,7 @@ import Image from "next/image";
 import profilePic from "@/public/logo/coderjibon.jpg";
 import Link from "next/link";
 import Circular from "../Circular/Circular";
-import { FaWhatsapp } from "react-icons/fa6";
+import { FaSkype, FaWhatsapp } from "react-icons/fa6";
 
 function Profile() {
   return (
@@ -67,13 +67,22 @@ function Profile() {
           </div>
         </div>
         <div className="h-[1px] bg-[#8c8c8e]"></div>
-        <Link
-          target="_blank"
-          href={"https://wa.link/fpvk13"}
-          className="mt-5 justify-center  text-lg ease-in-out flex items-center gap-2 text-white  py-3 px-6  rounded-lg  bg-gradient-to-r from-teal-400 to-blue-500 hover:from-blue-500 hover:to-teal-400 font-semibold "
-        >
-          {"Let's Talk"} <FaWhatsapp className="text-xl" />
-        </Link>
+        <div className="flex justify-between">
+          <Link
+            target="_blank"
+            href={"https://wa.link/fpvk13"}
+            className="mt-5 justify-center  text-lg ease-in-out flex items-center gap-2 text-white  py-3 px-6  rounded-lg  bg-gradient-to-r from-primary to-blue-500 hover:from-blue-500 hover:to-primary font-semibold "
+          >
+            {"Let's Talk"} <FaWhatsapp className="text-xl" />
+          </Link>
+          <Link
+            target="_blank"
+            href={"https://join.skype.com/invite/BLnlj2fzcVMv"}
+            className="mt-5 justify-center w-[25%]  text-lg ease-in-out flex items-center gap-2 text-white  py-2 px-1  rounded-lg  bg-gradient-to-r from-primary to-blue-500 hover:from-blue-500 hover:to-primary font-semibold "
+          >
+            <FaSkype className="text-2xl" />
+          </Link>
+        </div>
       </div>
     </>
   );

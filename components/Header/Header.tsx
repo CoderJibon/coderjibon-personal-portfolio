@@ -25,7 +25,7 @@ function Header() {
   return (
     <>
       <div className="p-[5px] md:p-[15px]">
-        <div className="dark:bg-secondary  dark:drop-shadow-md bg-darkLight rounded-lg py-3 px-5 flex  items-center justify-between space-x-2  xl:space-x-12 ">
+        <div className="dark:bg-white   dark:drop-shadow-md bg-darkLight rounded-lg py-3 px-5 flex  items-center justify-between space-x-2  xl:space-x-12 ">
           {/* left */}
           <div className="flex gap-8 lg:gap-16 items-center">
             {/* logo */}
@@ -40,13 +40,13 @@ function Header() {
             {/* switch dark mode */}
             <Switch />
             {/* profile btn */}
-            <div className=" md:hidden ">
+            <div className=" lg:hidden ">
               <ProfileBtn onClick={toggleDrawerProfile} />
             </div>
             <Link
               target="_blank"
               href={"https://wa.link/fpvk13"}
-              className="hidden text-sm ease-in-out lg:flex items-center gap-2 text-white  py-3 px-6  rounded-lg  bg-gradient-to-r from-teal-400 to-blue-500 hover:from-blue-500 hover:to-teal-400 font-semibold "
+              className="hidden text-sm ease-in-out lg:flex items-center gap-2 text-white  py-3 px-6  rounded-lg  bg-gradient-to-r from-primary to-blue-500 hover:from-blue-500 hover:to-primary font-semibold "
             >
               {"Let's Talk"} <FaWhatsapp className="text-lg" />
             </Link>

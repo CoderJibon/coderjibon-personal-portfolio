@@ -6,7 +6,6 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import "react-modern-drawer/dist/index.css";
 import "react-circular-progressbar/dist/styles.css";
-import Profile from "@/components/Profile/Profile";
 // Define Helvetica font family
 const Helvetica = localFont({
   src: [
@@ -46,14 +45,7 @@ export default function RootLayout({
           <Header />
           {/* section area */}
           <main className="pl-[5px] pr-[5px] md:pr-[15px] md:pl-[15px]">
-            <div className="flex lg:space-x-4 ">
-              <div className="bg-darkLight p-4 rounded-md lg:w-1/4 dark:bg-white dark:border dark:shadow-sm hidden lg:block  h-full">
-                <Profile />
-              </div>
-              <div className="bg-darkLight p-4 rounded-md w-full lg:w-3/4 dark:bg-white dark:border dark:shadow-sm">
-                {children}
-              </div>
-            </div>
+            {children}
           </main>
           {/* Footer area */}
           <Footer />

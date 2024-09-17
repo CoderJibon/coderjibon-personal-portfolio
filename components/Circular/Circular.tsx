@@ -10,7 +10,7 @@ function Circular({ percentage = 66 }: { percentage: number }) {
         strokeWidth={8}
         styles={buildStyles({
           pathTransitionDuration: 20, // animation speed
-          pathColor: `#6E4EF2`,
+          pathColor: `#7544D8`,
           textColor: "#f88",
           trailColor: "#d6d6d6",
         })}

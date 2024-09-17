@@ -12,7 +12,7 @@ const config: Config = {
         helvetica: ["var(--font-helvetica)", "sans-serif"],
       },
       colors: {
-        primary: "#00f7ec",
+        primary: "#7544D8",
         secondary: "#6E4EF2",
         success: "#2C2C37",
         darkLight: "#20202A",
