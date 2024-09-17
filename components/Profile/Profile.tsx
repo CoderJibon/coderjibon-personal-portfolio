@@ -67,7 +67,7 @@ function Profile() {
           </div>
         </div>
         <div className="h-[1px] bg-[#8c8c8e]"></div>
-        <div className=" justify-between xl:flex">
+        <div className="">
           <Link
             target="_blank"
             href={"https://wa.link/fpvk13"}
