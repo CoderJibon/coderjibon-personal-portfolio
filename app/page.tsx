@@ -11,7 +11,7 @@ export default function Home() {
           <div className="md:w-3/5 w-full">
             <p className="text-base"> Hi there 👋</p>
             <p className="text-2xl font-semibold dark:text-success ">
-              I'm Jibon Roy
+              {"I'm Jibon Roy"}
             </p>
             <p className=" text-2xl sm:text-4xl font-semibold text-color mt-2  ">
               A Passionate Full Stack Developer & Shopify Expert.
