@@ -2,8 +2,16 @@
 import React from "react";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { useTheme } from "next-themes";
-
+import { useEffect, useState } from "react";
 function Switch() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   const { theme, setTheme, systemTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
   return (
@@ -12,7 +20,7 @@ function Switch() {
         {currentTheme === "dark" ? (
           <MdDarkMode
             onClick={() => setTheme("light")}
-            className="text-2xl text-yellow-400"
+            className="text-2xl text-success"
           />
         ) : (
           <MdLightMode

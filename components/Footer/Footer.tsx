@@ -1,19 +1,24 @@
 import Link from "next/link.js";
-import { CiMail } from "react-icons/ci";
 import { FaLinkedin } from "react-icons/fa";
-import { FaFacebook, FaGithub, FaSkype, FaWhatsapp } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaGithub,
+  FaSkype,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa6";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <div className="p-[5px] md:p-[15px]">
-      <div className="bg-darkLight dark:bg-white dark:border shadow-sm py-2 px-4 rounded-md sm:flex items-center text-center justify-between">
+      <div className="bg-darkLight space-y-3 md:space-y-0 flex-col-reverse md:flex-row dark:bg-white md:items-center dark:border shadow-sm py-2 px-4 rounded-md flex items-center text-center justify-between">
         <p className="text-sm text-[#8c8c8e] dark:text-darkLight">
           Copyright © 2019-{currentYear} All Rights Reserved.
         </p>
-        <div className="flex space-x-3">
+        <div className="flex space-x-3 items-center justify-center">
           <Link
-            className=" text-xl md:text-2xl hover:text-primary transition text-[#8c8c8e] dark:text-darkLight dark:hover:text-primary"
+            className=" text-xl md:text-2xl hover:text-primary transition text-[#8c8c8e] items-center dark:text-darkLight dark:hover:text-primary"
             target="_blank"
             href={"https://github.com/CoderJibon"}
           >
@@ -50,9 +55,9 @@ function Footer() {
           <Link
             className=" text-xl md:text-2xl hover:text-primary transition text-[#8c8c8e] dark:text-darkLight dark:hover:text-primary"
             target="_blank"
-            href={"mailto:contact.engjibon@gmail.com"}
+            href={"https://www.youtube.com/@coderjibon"}
           >
-            <CiMail />
+            <FaYoutube />
           </Link>
         </div>
       </div>

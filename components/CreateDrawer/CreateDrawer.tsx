@@ -26,14 +26,18 @@ function CreateDrawer({ open, onClose }: DrawerProps) {
           </button>
         </div>
         <div className="h-[1px] mt-4 mb-4 bg-white"></div>
-        <div className="p-4 space-y-6 ml-8">
+        <div className="p-4 space-y-6  ml-7">
           {Menu.map((menu) => (
             <Link
               key={menu.id}
               className="text-white font-helvetica text-base font-semibold relative flex  items-center hover:text-primary dark:text-success dark:hover:text-primary  justify-center w-fit "
               href={menu.url}
             >
-              <span className="text-xl absolute -left-[30px] ">
+              <span
+                className={`text-xl absolute -left-[30px] ${
+                  pathName === menu.url ? "text-primary" : ""
+                } `}
+              >
                 {menu.icon}
               </span>
               <p

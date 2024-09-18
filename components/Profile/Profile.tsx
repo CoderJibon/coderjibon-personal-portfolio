@@ -2,7 +2,7 @@ import Image from "next/image";
 import profilePic from "@/public/logo/coderjibon.jpg";
 import Link from "next/link";
 import Circular from "../Circular/Circular";
-import { FaWhatsapp } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa6";
 
 function Profile() {
   return (
@@ -52,7 +52,7 @@ function Profile() {
       <div className="pl-4 pr-4 mt-4">
         <div className="h-[1px] bg-[#8c8c8e]"></div>
         <h4 className="text-[15px] mt-4">Languages</h4>
-        <div className="h-[100px] overflow-hidden mt-4 grid grid-cols-3 gap-5 justify-center ">
+        <div className="h-[80px] md:h-[80px] lg:h-[100px] overflow-hidden mt-4 grid grid-cols-3 gap-5 justify-center ">
           <div className="text-center">
             <Circular percentage={100} />
             <p className="text-sm mt-1">Bangla</p>
@@ -66,14 +66,44 @@ function Profile() {
             <p className="text-sm mt-1">English</p>
           </div>
         </div>
-        <div className="h-[1px] bg-[#8c8c8e]"></div>
+
         <div className="">
           <Link
             target="_blank"
             href={"https://wa.link/fpvk13"}
-            className="mt-5 justify-center  text-lg ease-in-out flex items-center gap-2 text-white  py-3 px-6  rounded-lg  bg-gradient-to-r from-primary to-blue-500 hover:from-blue-500 hover:to-primary font-semibold "
+            className=" justify-center  text-lg ease-in-out flex items-center gap-2 text-white  py-3 px-6  rounded-lg  bg-gradient-to-r from-primary to-blue-500 hover:from-blue-500 hover:to-primary font-semibold "
           >
             {"Let's Talk"} <FaWhatsapp className="text-xl" />
+          </Link>
+        </div>
+        <div className="mt-3 items-center flex justify-center gap-3">
+          <Link
+            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-primary dark:hover:bg-primary dark:hover:text-white"
+            target="_blank"
+            href={"https://github.com/CoderJibon"}
+          >
+            <FaGithub />
+          </Link>
+          <Link
+            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-primary dark:hover:bg-primary dark:hover:text-white"
+            target="_blank"
+            href={"https://www.linkedin.com/in/coderjibon/"}
+          >
+            <FaLinkedin />
+          </Link>
+          <Link
+            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-primary dark:hover:bg-primary dark:hover:text-white"
+            target="_blank"
+            href={"https://wa.link/fpvk13"}
+          >
+            <FaWhatsapp />
+          </Link>
+          <Link
+            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-primary dark:hover:bg-primary dark:hover:text-white"
+            target="_blank"
+            href={"https://www.youtube.com/@coderjibon"}
+          >
+            <FaYoutube />
           </Link>
         </div>
       </div>

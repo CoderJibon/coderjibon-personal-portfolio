@@ -12,7 +12,11 @@ function MainMenu() {
           className="text-white dark:text-success font-helvetica text-base font-semibold relative flex hover:text-primary dark:hover:text-primary  items-center  justify-center w-fit "
           href={menu.url}
         >
-          <span className="text-xl absolute -left-[30px] hidden lg:block ">
+          <span
+            className={`text-xl absolute -left-[30px] hidden lg:block ${
+              pathName === menu.url ? "text-primary" : ""
+            } `}
+          >
             {menu.icon}
           </span>
           <p
