@@ -52,7 +52,7 @@ function Profile() {
       <div className="pl-4 pr-4 mt-4">
         <div className="h-[1px] bg-[#8c8c8e]"></div>
         <h4 className="text-[15px] mt-4">Languages</h4>
-        <div className="h-[80px] md:h-[80px] lg:h-[100px] overflow-hidden mt-4 grid grid-cols-3 gap-5 justify-center ">
+        <div className="h-[80px] md:h-[80px] lg:h-[110px] overflow-hidden mt-4 grid grid-cols-3 gap-5 justify-center ">
           <div className="text-center">
             <Circular percentage={100} />
             <p className="text-sm mt-1">Bangla</p>

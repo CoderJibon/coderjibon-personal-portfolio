@@ -23,7 +23,7 @@ export default function Home() {
 
             <div className="mt-0 lg:mt-5 flex flex-col-reverse lg:flex-row gap-3 lg:gap-5  lg:items-center">
               <Link
-                className="flex gap-2 items-center px-3 py-2 xl:py-3 xl:px-8 border w-fit rounded-full border-primary text-primary hover:text-white hover:bg-primary transition cursor-pointer "
+                className="flex gap-2 items-center px-3 lg:px-5 py-2 xl:py-3 xl:px-8 border w-fit rounded-full border-primary text-primary hover:text-white hover:bg-primary transition cursor-pointer "
                 download={true}
                 href={"/"}
               >
