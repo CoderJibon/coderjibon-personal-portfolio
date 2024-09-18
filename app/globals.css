@@ -9,4 +9,10 @@
   .bgColor {
     @apply bg-gradient-to-r from-[#8750f7] to-[#140c1c];
   }
+  .text-color {
+    background-image: linear-gradient(to right, #8750f7 0%, #3b82f6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
