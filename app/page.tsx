@@ -4,6 +4,8 @@ import { FaDownload } from "react-icons/fa";
 import Image from "next/image.js";
 import img from "@/public/images/animited/01.png";
 import Counter from "@/components/Counter/Counter";
+import Skills from "@/components/Skills/Skills";
+import BGBox from "@/components/BGBox/BGBox";
 export default function Home() {
   return (
     <>
@@ -18,8 +20,12 @@ export default function Home() {
               A Passionate Full Stack Developer & Shopify Expert.
             </p>
             <p className="text-gray-400 font-medium text-base max-w-md mt-3 mb-0 lg:mb-3 dark:text-success ">
-              Specializing in MongoDB, Express, React, Node.js, Next.js, Redux
-              Toolkit, and Shopify Liquid.
+              I turn your ideas into reality, crafting unique web solutions that
+              not only meet your needs but also inspire both you and your
+              customers. With expertise in JavaScript, Node.js, React.js,
+              MongoDB, Express.js, REST APIs, Next.js, ReduxToolkit and Shopify
+              development, I am dedicated to delivering web projects that stand
+              out.
             </p>
 
             <div className="mt-0 lg:mt-5 flex flex-col-reverse lg:flex-row gap-3 lg:gap-5  lg:items-center">
@@ -44,8 +50,15 @@ export default function Home() {
             <Image src={img} alt="Developer" />
           </div>
         </div>
-        <Counter />
+        {/* Skill */}
+        <div className="mt-5">
+          <Skills />
+        </div>
       </MainLayout>
+      <BGBox>
+        {/* counter */}
+        <Counter />
+      </BGBox>
     </>
   );
 }
