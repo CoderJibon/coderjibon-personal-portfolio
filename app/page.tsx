@@ -3,11 +3,12 @@ import MainLayout from "./MainLayout";
 import { FaDownload } from "react-icons/fa";
 import Image from "next/image.js";
 import img from "@/public/images/animited/01.png";
+import Counter from "@/components/Counter/Counter";
 export default function Home() {
   return (
     <>
       <MainLayout>
-        <div className="rounded-md  md:flex items-center justify-center ">
+        <div className="rounded-md lg:pl-4  md:flex items-center justify-center ">
           <div className="md:w-3/5 w-full">
             <p className="text-base"> Hi there 👋</p>
             <p className="text-2xl font-semibold dark:text-success ">
@@ -43,6 +44,7 @@ export default function Home() {
             <Image src={img} alt="Developer" />
           </div>
         </div>
+        <Counter />
       </MainLayout>
     </>
   );
