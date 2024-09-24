@@ -22,11 +22,11 @@ function Profile() {
           >
             Jibon Roy
           </h2>
-          <p className="text-[15px] text-[#8c8c8e] text-center">
-            A Passionate Full Stack Developer 🖥️
+          <p className="text-[15px] text-gray-400 dark:text-darkLight text-center">
+            A Passionate Full Stack Developer
           </p>
           <Link
-            className="text-[15px] text-[#8c8c8e] text-center mx-auto"
+            className="text-[15px] text-gray-400 dark:text-darkLight text-center mx-auto"
             href={"mailto:contact.engjibon@gmail.com"}
           >
             contact.engjibon@gmail.com
@@ -35,15 +35,19 @@ function Profile() {
         <div className="pl-4 pr-4 pt-3">
           <div className="flex justify-between ">
             <p className="text-[14px]">Country:</p>
-            <p className="text-[14px] text-[#8c8c8e]">Bangladesh</p>
+            <p className="text-[14px] text-gray-400 dark:text-darkLight">
+              Bangladesh
+            </p>
           </div>
           <div className="flex justify-between ">
             <p className="text-[14px]">City:</p>
-            <p className="text-[14px] text-[#8c8c8e]">Dhaka</p>
+            <p className="text-[14px] text-gray-400 dark:text-darkLight">
+              Dhaka
+            </p>
           </div>
           <div className="flex justify-between ">
             <p className="text-[14px]">Phone:</p>
-            <p className="text-[14px] text-[#8c8c8e]">
+            <p className="text-[14px] text-gray-400 dark:text-darkLight">
               <Link href={"tel:+8801985868068"}>+8801985868068</Link>
             </p>
           </div>
@@ -78,28 +82,28 @@ function Profile() {
         </div>
         <div className="mt-3 items-center flex justify-center gap-3">
           <Link
-            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-primary dark:hover:bg-primary dark:hover:text-white"
+            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-darkyellow hover:text-black dark:hover:bg-primary dark:hover:text-white"
             target="_blank"
             href={"https://github.com/CoderJibon"}
           >
             <FaGithub />
           </Link>
           <Link
-            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-primary dark:hover:bg-primary dark:hover:text-white"
+            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-darkyellow hover:text-black dark:hover:bg-primary dark:hover:text-white"
             target="_blank"
             href={"https://www.linkedin.com/in/coderjibon/"}
           >
             <FaLinkedin />
           </Link>
           <Link
-            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-primary dark:hover:bg-primary dark:hover:text-white"
+            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-darkyellow hover:text-black dark:hover:bg-primary dark:hover:text-white"
             target="_blank"
             href={"https://wa.link/fpvk13"}
           >
             <FaWhatsapp />
           </Link>
           <Link
-            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-primary dark:hover:bg-primary dark:hover:text-white"
+            className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-darkyellow hover:text-black dark:hover:bg-primary dark:hover:text-white"
             target="_blank"
             href={"https://www.youtube.com/@coderjibon"}
           >

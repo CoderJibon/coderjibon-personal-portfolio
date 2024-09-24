@@ -16,6 +16,7 @@ const config: Config = {
         secondary: "#6E4EF2",
         success: "#2C2C37",
         darkLight: "#20202A",
+        darkyellow: "#FFC107",
       },
     },
   },

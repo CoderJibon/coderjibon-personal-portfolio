@@ -9,19 +9,21 @@ function MainMenu() {
       {Menu.map((menu) => (
         <Link
           key={menu.id}
-          className="text-white dark:text-success font-helvetica text-base font-semibold relative flex hover:text-primary dark:hover:text-primary  items-center  justify-center w-fit "
+          className="text-gray-400 dark:text-success font-helvetica text-base font-semibold relative flex hover:text-white dark:hover:text-primary  items-center  justify-center w-fit "
           href={menu.url}
         >
           <span
             className={`text-xl absolute -left-[30px] hidden lg:block ${
-              pathName === menu.url ? "text-primary" : ""
+              pathName === menu.url ? "text-white" : ""
             } `}
           >
             {menu.icon}
           </span>
           <p
             className={`menuItem ${
-              pathName === menu.url ? "after:scale-x-100 text-primary" : ""
+              pathName === menu.url
+                ? "after:scale-x-100 text-white dark:text-primary "
+                : ""
             } `}
           >
             {menu.label}

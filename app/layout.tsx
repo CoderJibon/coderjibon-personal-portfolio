@@ -6,6 +6,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import "react-modern-drawer/dist/index.css";
 import "react-circular-progressbar/dist/styles.css";
+import "react-loading-skeleton/dist/skeleton.css";
 // Define Helvetica font family
 const Helvetica = localFont({
   src: [

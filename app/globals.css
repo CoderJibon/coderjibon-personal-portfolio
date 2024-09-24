@@ -4,13 +4,22 @@
 
 @layer components {
   .menuItem {
-    @apply block w-fit after:content-[''] after:w-full after:h-[3px] after:bg-primary after:block after:absolute after:scale-x-0 after:hover:scale-x-100 after:transition-all after:duration-300 after:origin-right;
+    @apply block w-fit after:content-[''] after:w-full after:h-[3px] dark:after:bg-primary after:bg-white after:block after:absolute after:scale-x-0 after:hover:scale-x-100 after:transition-all after:duration-300 after:origin-right;
   }
-  .bgColor {
+  .dark-bgColor {
     @apply bg-gradient-to-r from-[#8750f7] to-[#140c1c];
   }
-  .text-color {
+  .bgColor {
+    @apply bg-gradient-to-r from-[#ffc107] to-[#140c1c];
+  }
+  .dark-text-color {
     background-image: linear-gradient(to right, #8750f7 0%, #3b82f6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-color {
+    background-image: linear-gradient(to right, #ffc107 0%, #fff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

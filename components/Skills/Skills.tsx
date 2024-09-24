@@ -3,15 +3,13 @@ import { Skill } from "@/data/Data";
 function Skills() {
   return (
     <div className="">
-      <h2 className="text-color font-semibold text-3xl sm:text-5xl">
-        My Skills
-      </h2>
+      <h2 className=" font-semibold text-2xl">My Skills</h2>
       <Marquee>
-        <div className="mt-5 flex cursor-pointer">
+        <div className="mt-4 flex cursor-pointer">
           {Skill.map((skill) => (
             <div
               key={skill.id}
-              className="bg-success mr-2 ml-2 dark:bg-gray-100  dark:text-success dark:hover:bg-primary dark:hover:text-white hover:bg-primary transition-all py-3 px-6 text-7xl rounded-xl"
+              className="bg-success mr-2 ml-2 dark:bg-gray-100  dark:text-success dark:hover:bg-gray-200 dark:hover:text-success hover:bg-black transition-all py-3 px-6 text-7xl rounded-xl"
             >
               <div className="w-[70px]">{skill.icon}</div>
               <p className="text-xs text-center mt-2">{skill.label}</p>
