@@ -18,42 +18,42 @@ function Footer() {
         </p>
         <div className="flex  space-x-3 items-center justify-center">
           <Link
-            className=" text-xl md:text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
+            className=" text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
             target="_blank"
             href={"https://github.com/CoderJibon"}
           >
             <FaGithub />
           </Link>
           <Link
-            className=" text-xl md:text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
+            className="text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
             target="_blank"
             href={"https://www.linkedin.com/in/coderjibon/"}
           >
             <FaLinkedin />
           </Link>
           <Link
-            className=" text-xl md:text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
+            className="text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
             target="_blank"
             href={"https://www.facebook.com/coderroy/"}
           >
             <FaFacebook />
           </Link>
           <Link
-            className=" text-xl md:text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
+            className="text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
             target="_blank"
             href={"https://wa.link/fpvk13"}
           >
             <FaWhatsapp />
           </Link>
           <Link
-            className=" text-xl md:text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
+            className="text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
             target="_blank"
             href={"https://join.skype.com/invite/BLnlj2fzcVMv"}
           >
             <FaSkype />
           </Link>
           <Link
-            className=" text-xl md:text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
+            className="text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
             target="_blank"
             href={"https://www.youtube.com/@coderjibon"}
           >
