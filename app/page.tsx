@@ -6,6 +6,7 @@ import img from "@/public/images/animited/01.png";
 import Counter from "@/components/Counter/Counter";
 import Skills from "@/components/Skills/Skills";
 import BGBox from "@/components/BGBox/BGBox";
+import MyServices from "@/components/MyServices/MyServices";
 export default function Home() {
   return (
     <>
@@ -55,9 +56,13 @@ export default function Home() {
           <Skills />
         </div>
       </MainLayout>
+      {/* counter */}
       <BGBox>
-        {/* counter */}
         <Counter />
+      </BGBox>
+      {/* MyServices */}
+      <BGBox>
+        <MyServices />
       </BGBox>
     </>
   );
