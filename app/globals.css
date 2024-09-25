@@ -10,7 +10,7 @@
     @apply bg-gradient-to-r from-[#8750f7] to-[#140c1c];
   }
   .bgColor {
-    @apply bg-gradient-to-r from-[#ffc107] to-[#140c1c];
+    @apply bg-gradient-to-r from-[#FFC107] to-[#140c1c];
   }
   .dark-text-color {
     background-image: linear-gradient(to right, #8750f7 0%, #3b82f6 100%);

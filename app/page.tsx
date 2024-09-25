@@ -7,6 +7,8 @@ import Counter from "@/components/Counter/Counter";
 import Skills from "@/components/Skills/Skills";
 import BGBox from "@/components/BGBox/BGBox";
 import MyServices from "@/components/MyServices/MyServices";
+import Coverflow from "@/components/Coverflow/Coverflow";
+import Shopify from "@/components/Shopify/Shopify";
 export default function Home() {
   return (
     <>
@@ -62,7 +64,44 @@ export default function Home() {
       </BGBox>
       {/* MyServices */}
       <BGBox>
+        <h2 className="text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
+          My Quality Services
+        </h2>
         <MyServices />
+      </BGBox>
+      {/* MyProject for react */}
+      <BGBox>
+        <h2 className="text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
+          Works & Projects
+        </h2>
+        <Coverflow />
+      </BGBox>
+      {/* Shopify Project*/}
+      <BGBox>
+        <div className="mb-7 flex justify-between items-center">
+          <h2 className="text-2xl  text-color dark:dark-text-color font-semibold ">
+            Shopify Projects
+          </h2>
+          <Link
+            className="text-base font-semibold hover:underline underline-offset-8 "
+            href={"/"}
+          >
+            View more
+          </Link>
+        </div>
+        <Shopify />
+      </BGBox>
+      {/* Client Reviews*/}
+      <BGBox>
+        <h2 className="text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
+          What clients say!
+        </h2>
+      </BGBox>
+      {/* Client Reviews*/}
+      <BGBox>
+        <h2 className="text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
+          Recent Blogs
+        </h2>
       </BGBox>
     </>
   );
