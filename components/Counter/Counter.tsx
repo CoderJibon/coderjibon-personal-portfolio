@@ -35,7 +35,7 @@ function Counter() {
       </div>
 
       {/* marquee slide */}
-      <div className="flex sm:hidden justify-between gap-3 items-center mt-5">
+      <div className="flex sm:hidden justify-between gap-3 items-center ">
         <Marquee direction="right">
           <div className="flex items-center gap-4 mr-3 bg-success dark:bg-gray-100 w-fit px-4 rounded-md py-2">
             <h3 className="font-bold dark:text-primary text-darkyellow text-5xl sm:text-6xl ">
