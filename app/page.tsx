@@ -9,6 +9,7 @@ import BGBox from "@/components/BGBox/BGBox";
 import MyServices from "@/components/MyServices/MyServices";
 import Coverflow from "@/components/Coverflow/Coverflow";
 import Shopify from "@/components/Shopify/Shopify";
+import ClientReview from "@/components/ClientReview/ClientReview";
 export default function Home() {
   return (
     <>
@@ -76,6 +77,13 @@ export default function Home() {
         </h2>
         <Coverflow />
       </BGBox>
+      {/* Client Reviews*/}
+      <BGBox>
+        <h2 className="text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
+          What clients say!
+        </h2>
+        <ClientReview />
+      </BGBox>
       {/* Shopify Project*/}
       <BGBox>
         <div className="mb-7 flex justify-between items-center">
@@ -91,13 +99,7 @@ export default function Home() {
         </div>
         <Shopify />
       </BGBox>
-      {/* Client Reviews*/}
-      <BGBox>
-        <h2 className="text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
-          What clients say!
-        </h2>
-      </BGBox>
-      {/* Client Reviews*/}
+      {/* Recent Blogs*/}
       <BGBox>
         <h2 className="text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
           Recent Blogs

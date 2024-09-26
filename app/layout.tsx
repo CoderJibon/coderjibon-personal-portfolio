@@ -10,6 +10,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 // Define Helvetica font family
 const Helvetica = localFont({
   src: [
