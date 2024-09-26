@@ -2,7 +2,7 @@
 import Logo from "../MainMenu/Logo";
 import MainMenu from "../MainMenu/MainMenu";
 import Switch from "../Switch/Switch";
-import Link from "next/link.js";
+import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa6";
 import HamburgerBtn from "./HamburgerBtn";
 import ProfileBtn from "./ProfileBtn";
@@ -29,7 +29,9 @@ function Header() {
           {/* left */}
           <div className="flex gap-8 lg:gap-16 items-center">
             {/* logo */}
-            <Logo />
+            <Link href={"/"}>
+              <Logo />
+            </Link>
             {/* menu */}
             <div className="hidden  md:block">
               <MainMenu />
@@ -46,7 +48,7 @@ function Header() {
             <Link
               target="_blank"
               href={"https://wa.link/fpvk13"}
-              className="hidden text-sm ease-in-out lg:flex items-center gap-2 text-white  py-3 px-6  rounded-lg  bg-gradient-to-r from-primary to-blue-500 hover:from-blue-500 hover:to-primary font-semibold "
+              className="hidden text-sm ease-in-out xl:flex items-center gap-2 text-white  py-3 px-6  rounded-lg  bg-gradient-to-r from-primary to-blue-500 hover:from-blue-500 hover:to-primary font-semibold "
             >
               {"Let's Talk"} <FaWhatsapp className="text-lg" />
             </Link>

@@ -39,6 +39,12 @@ export const Menu = [
     icon: <MdWorkOutline />,
   },
   {
+    id: 6,
+    label: "Shopify",
+    url: "/shopify",
+    icon: <FaShopify />,
+  },
+  {
     id: 4,
     label: "Blog",
     url: "/blog",

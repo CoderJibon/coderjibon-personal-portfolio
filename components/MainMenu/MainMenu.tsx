@@ -14,7 +14,7 @@ function MainMenu() {
         >
           <span
             className={`text-xl absolute -left-[30px] hidden lg:block ${
-              pathName === menu.url ? "text-white" : ""
+              pathName === menu.url ? "text-white dark:text-primary" : ""
             } `}
           >
             {menu.icon}
