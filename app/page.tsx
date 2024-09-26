@@ -10,6 +10,7 @@ import MyServices from "@/components/MyServices/MyServices";
 import Coverflow from "@/components/Coverflow/Coverflow";
 import Shopify from "@/components/Shopify/Shopify";
 import ClientReview from "@/components/ClientReview/ClientReview";
+import Blog from "@/components/Blog/Blog";
 export default function Home() {
   return (
     <>
@@ -101,9 +102,22 @@ export default function Home() {
       </BGBox>
       {/* Recent Blogs*/}
       <BGBox>
-        <h2 className="text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
-          Recent Blogs
-        </h2>
+        <div className="mb-7 flex justify-between items-center">
+          <h2 className="text-2xl  text-color dark:dark-text-color font-semibold ">
+            Recent Blogs
+          </h2>
+          <Link
+            className="text-base font-semibold hover:underline underline-offset-8 "
+            href={"/"}
+          >
+            View more
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Blog />
+          <Blog />
+          <Blog />
+        </div>
       </BGBox>
     </>
   );

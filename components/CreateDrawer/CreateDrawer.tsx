@@ -5,7 +5,10 @@ import { FaWhatsapp, FaX } from "react-icons/fa6";
 import { Menu } from "@/data/Data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import whiteLogo from "@/public/logo/transparentLogo.png";
+import transparentLogo from "@/public/logo/transparentLogo.png";
+import whiteLogo from "@/public/logo/whiteLogo.png";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 type DrawerProps = {
   open: boolean;
   onClose: () => void;
@@ -13,14 +16,27 @@ type DrawerProps = {
 
 function CreateDrawer({ open, onClose }: DrawerProps) {
   const pathName = usePathname();
+  const [mounted, setMounted] = useState(false);
+  const { theme, systemTheme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted)
+    return <Image src={transparentLogo} alt="coderjibon logo" height={40} />;
   return (
     <Drawer open={open} onClose={onClose} direction={"left"}>
       <div className="p-4 bg-darkLight  dark:bg-white  h-screen">
         <div className="flex justify-between items-center">
-          <Image src={whiteLogo} alt="coderjibon logo" height={40} />
+          <Image
+            src={currentTheme === "dark" ? transparentLogo : whiteLogo}
+            alt="coderjibon logo"
+            height={40}
+          />
           <button
             onClick={onClose}
-            className="text-white border dark:text-success dark:hover:text-white border-gray-300 rounded-md hover:bg-primary transition-all hover:text-black text-xs p-2"
+            className="text-white border dark:text-success dark:hover:text-white border-gray-300 rounded-md dark:hover:bg-primary hover:bg-darkyellow transition-all hover:text-black text-xs p-2"
           >
             <FaX />
           </button>
@@ -30,19 +46,21 @@ function CreateDrawer({ open, onClose }: DrawerProps) {
           {Menu.map((menu) => (
             <Link
               key={menu.id}
-              className="text-white font-helvetica text-base font-semibold relative flex  items-center hover:text-primary dark:text-success dark:hover:text-primary  justify-center w-fit "
+              className="text-gray-400 font-helvetica text-base font-semibold relative flex  items-center hover:text-white dark:text-success dark:hover:text-primary  justify-center w-fit "
               href={menu.url}
             >
               <span
                 className={`text-xl absolute -left-[30px] ${
-                  pathName === menu.url ? "text-primary" : ""
+                  pathName === menu.url ? "dark:text-primary text-white " : ""
                 } `}
               >
                 {menu.icon}
               </span>
               <p
                 className={`menuItem ${
-                  pathName === menu.url ? "after:scale-x-100 text-primary" : ""
+                  pathName === menu.url
+                    ? "after:scale-x-100 dark:text-primary text-white "
+                    : ""
                 } `}
               >
                 {menu.label}
