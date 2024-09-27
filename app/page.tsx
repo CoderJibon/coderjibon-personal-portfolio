@@ -57,6 +57,7 @@ export default function Home() {
         </div>
         {/* Skill */}
         <div className=" mt-4 ">
+          <h2 className=" font-semibold text-2xl sm:text-3xl">My Skills</h2>
           <Skills />
         </div>
       </MainLayout>
@@ -66,21 +67,21 @@ export default function Home() {
       </BGBox>
       {/* MyServices */}
       <BGBox>
-        <h2 className="text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
+        <h2 className="text-2xl sm:text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
           My Quality Services
         </h2>
         <MyServices />
       </BGBox>
       {/* MyProject for react */}
       <BGBox>
-        <h2 className="text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
+        <h2 className="text-2xl sm:text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
           Works & Projects
         </h2>
         <Coverflow />
       </BGBox>
       {/* Client Reviews*/}
       <BGBox>
-        <h2 className="text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
+        <h2 className="text-2xl sm:text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
           What clients say!
         </h2>
         <ClientReview />
@@ -88,12 +89,12 @@ export default function Home() {
       {/* Shopify Project*/}
       <BGBox>
         <div className="mb-7 flex justify-between items-center">
-          <h2 className="text-2xl  text-color dark:dark-text-color font-semibold ">
+          <h2 className="text-2xl sm:text-3xl  text-color dark:dark-text-color font-semibold ">
             Shopify Projects
           </h2>
           <Link
             className="text-base font-semibold hover:underline underline-offset-8 "
-            href={"/"}
+            href={"/shopify"}
           >
             View more
           </Link>
@@ -103,12 +104,12 @@ export default function Home() {
       {/* Recent Blogs*/}
       <BGBox>
         <div className="mb-7 flex justify-between items-center">
-          <h2 className="text-2xl  text-color dark:dark-text-color font-semibold ">
+          <h2 className="text-2xl sm:text-3xl  text-color dark:dark-text-color font-semibold ">
             Recent Blogs
           </h2>
           <Link
             className="text-base font-semibold hover:underline underline-offset-8 "
-            href={"/"}
+            href={"/blog"}
           >
             View more
           </Link>

@@ -35,7 +35,7 @@ const Helvetica = localFont({
 export const metadata: Metadata = {
   title: "CoderJibon",
   description:
-    "👋 Hello! I'm Jibon Roy, a passionate MERN stack developer, you specialize in creating web applications by utilizing MongoDB for data storage, Express.js for building the backend, React And Next.js for crafting dynamic user interfaces, and Node.js for server-side functionality. My expertise ranges from creating robust APIs and managing databases to designing intuitive user interfaces that offer exceptional user experiences. This technology combination enables me to create full-stack applications that efficiently handle data flow and user interactions, resulting in modern and feature-rich web experiences. Also, I am Working as Shopify Developer. I always look for challenges where I can utilize my skill and knowledge most and always love to work on cutting-edge technologies.",
+    "👋 Hi, I'm Jibon Roy, a passionate and results-driven Full-Stack MERN Developer with expertise in creating feature-rich, scalable web applications. I specialize in building dynamic and intuitive user interfaces using React and Next.js, backed by robust server-side logic powered by Node.js and Express.js, Prisma and managing data with MongoDB, and MySQL.I have extensive experience across the full development stack, ensuring seamless integration between front-end and back-end systems. interactive UI or engineering high-performance API with technology combination enables me to build full-stack applications that efficiently handle data flow and user interactions, resulting in modern and feature-rich web experiences.",
 };
 export default function RootLayout({
   children,

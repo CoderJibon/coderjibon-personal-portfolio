@@ -3,7 +3,6 @@ import { Skill } from "@/data/Data";
 function Skills() {
   return (
     <div className="">
-      <h2 className=" font-semibold text-2xl">My Skills</h2>
       <Marquee>
         <div className="mt-4 flex cursor-pointer">
           {Skill.map((skill) => (
