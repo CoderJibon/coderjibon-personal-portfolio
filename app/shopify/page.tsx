@@ -2,7 +2,7 @@ import BGBox from "@/components/BGBox/BGBox";
 import MainLayout from "../MainLayout";
 import Image from "next/image";
 import about from "@/public/images/animited/about.png";
-import ProjectCard from "@/components/ProjectCard/ProjectCard";
+import ShopifyProjectCard from "@/components/ShopifyProjectCard/ShopifyProjectCard";
 
 function shopifyPage() {
   return (
@@ -97,12 +97,12 @@ function shopifyPage() {
           id="project"
           className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 md:gap-5"
         >
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          <ShopifyProjectCard />
+          <ShopifyProjectCard />
+          <ShopifyProjectCard />
+          <ShopifyProjectCard />
+          <ShopifyProjectCard />
+          <ShopifyProjectCard />
         </div>
       </BGBox>
     </>

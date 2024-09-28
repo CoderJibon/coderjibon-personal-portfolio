@@ -1,11 +1,11 @@
-import ProjectCard from "../ProjectCard/ProjectCard";
+import ShopifyProjectCard from "../ShopifyProjectCard/ShopifyProjectCard";
 
 function Shopify() {
   return (
     <div className="md:flex gap-4">
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+      <ShopifyProjectCard />
+      <ShopifyProjectCard />
+      <ShopifyProjectCard />
     </div>
   );
 }

@@ -24,7 +24,8 @@ function Header() {
 
   return (
     <>
-      <div className="p-[5px] md:p-[15px]">
+      {/*  */}
+      <div className=" p-[5px] md:p-[15px] pt-0 md:pt-0 header-area">
         <div className="dark:bg-white   dark:drop-shadow-md bg-darkLight rounded-lg py-3 px-5 flex  items-center justify-between space-x-2  xl:space-x-12 ">
           {/* left */}
           <div className="flex gap-8 lg:gap-16 items-center">

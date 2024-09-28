@@ -2,6 +2,8 @@ import BGBox from "@/components/BGBox/BGBox";
 import MainLayout from "../MainLayout";
 import Skills from "@/components/Skills/Skills";
 import Coverflow from "@/components/Coverflow/Coverflow";
+import { FaBook } from "react-icons/fa6";
+import { BsPersonWorkspace } from "react-icons/bs";
 
 function AboutPage() {
   return (
@@ -147,11 +149,145 @@ function AboutPage() {
           <h2 className="text-2xl md:text-3xl mb-7 text-color dark:dark-text-color font-semibold ">
             My Education
           </h2>
+          <div className="flex gap-7 items-center pl-3">
+            <div>
+              <FaBook className="text-gray-400 dark:text-success text-4xl" />
+            </div>
+            <div>
+              <p className="text-base dark:text-darkLight text-gray-400">
+                2013 - Present
+              </p>
+              <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                Secondaary school certificate S.S.C
+              </p>
+              <p className="text-base capitalize dark:text-darkLight text-gray-400">
+                Murapara model pilot hight school, narayanganj.
+              </p>
+            </div>
+          </div>
+          <hr className=" text-success my-5" />
+          <div className="flex gap-7 items-center pl-3">
+            <div>
+              <FaBook className="text-gray-400 dark:text-success text-4xl" />
+            </div>
+            <div>
+              <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                2015 - 2019
+              </p>
+              <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                diploma in computer engineering
+              </p>
+              <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                PPMI, narayanganj.
+              </p>
+            </div>
+          </div>
+          <hr className=" text-success my-5" />
+          <div className="flex gap-7 items-center pl-3">
+            <div>
+              <FaBook className="text-gray-400 dark:text-success text-4xl" />
+            </div>
+            <div>
+              <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                2018 - 2019
+              </p>
+              <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                front-end web developer course
+              </p>
+              <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                SoftTech-IT, Dhaka.
+              </p>
+            </div>
+          </div>
+          <hr className=" text-success my-5" />
+          <div className="flex gap-7 items-center pl-3">
+            <div>
+              <FaBook className="text-gray-400 dark:text-success text-4xl" />
+            </div>
+            <div>
+              <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                2019 - 2020
+              </p>
+              <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                Shopify E-commerce Platform
+              </p>
+              <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                Shopify Partner
+              </p>
+            </div>
+          </div>
+          <hr className=" text-success my-5" />
+          <div className="flex gap-7 items-center pl-3">
+            <div>
+              <FaBook className="text-gray-400 dark:text-success text-4xl" />
+            </div>
+            <div>
+              <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                2020 - 2021
+              </p>
+              <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                Complete Web Development course
+              </p>
+              <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                Programming Hero, Dhaka.
+              </p>
+            </div>
+          </div>
+          <hr className=" text-success my-5" />
+          <div className="flex gap-7 items-center pl-3">
+            <div>
+              <FaBook className="text-gray-400 dark:text-success text-4xl" />
+            </div>
+            <div>
+              <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                2022 - 2023
+              </p>
+              <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                MERN full stack web app development course
+              </p>
+              <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                sorobindu, Dhaka.
+              </p>
+            </div>
+          </div>
         </BGBox>
         <BGBox>
           <h2 className="text-2xl md:text-3xl mb-7 text-color dark:dark-text-color font-semibold ">
             My Experience
           </h2>
+          <div className="flex gap-7 items-center pl-3">
+            <div>
+              <BsPersonWorkspace className="text-gray-400 dark:text-success text-4xl" />
+            </div>
+            <div>
+              <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                2020 - 2021
+              </p>
+              <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                front-end web developer
+              </p>
+              <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                BitwiseCode Technologies, Dhaka.
+              </p>
+            </div>
+          </div>
+          <hr className=" text-success my-5" />
+          <div className="flex gap-7 items-center pl-3">
+            <div>
+              <BsPersonWorkspace className="text-gray-400 dark:text-success text-4xl" />
+            </div>
+            <div>
+              <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                2021 - 2022
+              </p>
+              <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                front-end Design and shopify developer
+              </p>
+              <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                scraft.studio, indian. (Remote)
+              </p>
+            </div>
+          </div>
         </BGBox>
       </div>
       {/* Project */}

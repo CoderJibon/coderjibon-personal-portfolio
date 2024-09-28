@@ -22,10 +22,10 @@ function Blog() {
         </div>
         <Link
           className="flex mt-3 duration-700  md:text-base text-xs  gap-1 dark:text-primary text-darkyellow hover:gap-2 rounded-tr-2xl transition-all rounded-bl-2xl items-center "
-          href={"/"}
+          href={"/blog/create-blog-item"}
         >
           Read more
-          <GoArrowRight className="text-xl  dark:text-white" />
+          <GoArrowRight className="text-xl  dark:text-primary" />
         </Link>
       </div>
     </div>

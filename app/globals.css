@@ -24,4 +24,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .header-area {
+    width: 100%;
+    z-index: 99;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
 }

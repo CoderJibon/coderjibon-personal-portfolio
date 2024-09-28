@@ -102,7 +102,7 @@ export default function Home() {
         <Shopify />
       </BGBox>
       {/* Recent Blogs*/}
-      <BGBox>
+      <BGBox className="hidden">
         <div className="mb-7 flex justify-between items-center">
           <h2 className="text-2xl sm:text-3xl  text-color dark:dark-text-color font-semibold ">
             Recent Blogs
