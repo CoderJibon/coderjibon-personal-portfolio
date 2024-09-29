@@ -1,17 +1,5 @@
-"use client";
 import AnimatedCursor from "react-animated-cursor";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
-
 function CursorPointer() {
-  const [mounted, setMounted] = useState(false);
-  const { theme, systemTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
   return (
     <>
       <AnimatedCursor
@@ -20,16 +8,8 @@ function CursorPointer() {
         outerAlpha={0}
         innerScale={2}
         outerScale={2}
-        innerStyle={
-          currentTheme === "dark"
-            ? { backgroundColor: "#7544D8" }
-            : { backgroundColor: "#fff" }
-        }
-        outerStyle={
-          currentTheme === "dark"
-            ? { border: "3px solid #7544D8" }
-            : { border: "3px solid #fff" }
-        }
+        innerStyle={{ backgroundColor: `var(--cursor-color)` }}
+        outerStyle={{ border: `3px solid var(--cursor-color)` }}
         clickables={[
           "a",
           'input[type="text"]',

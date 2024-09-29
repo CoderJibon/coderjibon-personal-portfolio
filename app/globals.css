@@ -31,4 +31,12 @@
     position: sticky;
     top: 0;
   }
+
+  html.light {
+    --cursor-color: #fff;
+  }
+
+  html.dark {
+    --cursor-color: #7544d8;
+  }
 }
