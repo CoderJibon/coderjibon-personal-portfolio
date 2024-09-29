@@ -4,6 +4,7 @@ import transparentLogo from "@/public/logo/transparentLogo.png";
 import whiteLogo from "@/public/logo/whiteLogo.png";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+
 function Logo() {
   const [mounted, setMounted] = useState(false);
   const { theme, systemTheme } = useTheme();

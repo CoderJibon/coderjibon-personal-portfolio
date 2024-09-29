@@ -11,6 +11,7 @@ import Coverflow from "@/components/Coverflow/Coverflow";
 import Shopify from "@/components/Shopify/Shopify";
 import ClientReview from "@/components/ClientReview/ClientReview";
 import Blog from "@/components/Blog/Blog";
+import { GoArrowRight } from "react-icons/go";
 export default function Home() {
   return (
     <>
@@ -24,7 +25,7 @@ export default function Home() {
             <p className=" text-2xl sm:text-4xl font-semibold text-color dark:dark-text-color mt-2  lg:w-full  ">
               A Passionate Full Stack Developer & Shopify Expert.
             </p>
-            <p className="text-gray-400 font-medium text-base max-w-md mt-3 mb-0 lg:mb-3 dark:text-success ">
+            <p className="text-gray-400 font-medium text-base max-w-md mt-3 mb-0 lg:mb-3 dark:text-success text-justify ">
               I turn your ideas into reality, crafting unique web solutions that
               not only meet your needs but also inspire both you and your
               customers. With expertise in JavaScript, Node.js, React.js,
@@ -80,7 +81,7 @@ export default function Home() {
         <Coverflow />
       </BGBox>
       {/* Client Reviews*/}
-      <BGBox>
+      <BGBox className="relative mt-4">
         <h2 className="text-2xl sm:text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
           What clients say!
         </h2>
@@ -93,10 +94,11 @@ export default function Home() {
             Shopify Projects
           </h2>
           <Link
-            className="text-base font-semibold hover:underline underline-offset-8 "
+            className="text-base flex font-semibold group gap-1 items-center underline-offset-8 dark:text-success hover:text-darkyellow dark:hover:text-primary transition-all "
             href={"/shopify"}
           >
-            View more
+            View more{" "}
+            <GoArrowRight className="text-xl group-hover:translate-x-1  " />
           </Link>
         </div>
         <Shopify />
@@ -108,10 +110,11 @@ export default function Home() {
             Recent Blogs
           </h2>
           <Link
-            className="text-base font-semibold hover:underline underline-offset-8 "
+            className="text-base flex font-semibold group gap-1 items-center underline-offset-8 dark:text-success hover:text-darkyellow dark:hover:text-primary transition-all "
             href={"/blog"}
           >
-            View more
+            View more{" "}
+            <GoArrowRight className="text-xl group-hover:translate-x-1  " />
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

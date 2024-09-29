@@ -23,8 +23,7 @@ function CreateDrawer({ open, onClose }: DrawerProps) {
     setMounted(true);
   }, []);
 
-  if (!mounted)
-    return <Image src={transparentLogo} alt="coderjibon logo" height={40} />;
+  if (!mounted) return null;
   return (
     <Drawer open={open} onClose={onClose} direction={"left"}>
       <div className="p-4 bg-darkLight  dark:bg-white  h-screen">

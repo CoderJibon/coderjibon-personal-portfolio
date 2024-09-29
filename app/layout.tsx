@@ -11,6 +11,8 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import CursorPointer from "@/components/CursorPointer/CursorPointer";
+
 // Define Helvetica font family
 const Helvetica = localFont({
   src: [
@@ -54,6 +56,9 @@ export default function RootLayout({
           </main>
           {/* Footer area */}
           <Footer />
+          <div className="hidden md:block ">
+            <CursorPointer />
+          </div>
         </ThemeProviders>
       </body>
     </html>

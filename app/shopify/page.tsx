@@ -8,7 +8,7 @@ function shopifyPage() {
   return (
     <>
       <MainLayout>
-        <div className="p-6 pt-2 text-justify container mx-auto max-w-5xl text-gray-100 dark:text-success">
+        <div className="md:p-6 pt-2 container mx-auto max-w-5xl text-gray-100 dark:text-success">
           <h2 className="text-xl sm:text-2xl font-bold mb-4 text-darkyellow dark:text-primary">
             Shopify Expert
           </h2>
@@ -68,7 +68,7 @@ function shopifyPage() {
         <h2 className="text-xl md:text-3xl mb-7 text-color dark:dark-text-color font-semibold ">
           What my client says about me?
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center justify-center">
           <div>
             <iframe
               className="w-full h-64 md:h-96" // Responsive height for smaller and larger screens
@@ -80,9 +80,9 @@ function shopifyPage() {
               allowFullScreen
             ></iframe>
           </div>
-          <div>
+          <div className="hidden sm:block items-center">
             <Image
-              className="max-h-[400px] mx-auto  w-auto h-full"
+              className="max-h-[350px] mx-auto  w-auto h-full"
               src={about}
               alt="About me"
             />

@@ -71,7 +71,7 @@ function Profile() {
           </div>
         </div>
 
-        <div className="">
+        <div className="mt-3">
           <Link
             target="_blank"
             href={"https://wa.link/fpvk13"}
@@ -80,7 +80,7 @@ function Profile() {
             {"Let's Talk"} <FaWhatsapp className="text-xl" />
           </Link>
         </div>
-        <div className="mt-3 items-center flex justify-center gap-3">
+        <div className="mt-5 items-center flex justify-center gap-3">
           <Link
             className=" text-xl md:text-2xl  transition items-center  px-[10px] py-[10px] inline-block bg-success dark:bg-slate-200 rounded-md hover:bg-darkyellow hover:text-black dark:hover:bg-primary dark:hover:text-white"
             target="_blank"

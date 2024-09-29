@@ -9,7 +9,7 @@ function AboutPage() {
   return (
     <>
       <MainLayout>
-        <div className="p-6 pt-2 text-justify container mx-auto max-w-5xl text-gray-100 dark:text-success">
+        <div className=" md:p-6 pt-2 text-justify container mx-auto max-w-5xl text-gray-100 dark:text-success">
           <h1 className="text-xl sm:text-2xl font-bold mb-4 text-darkyellow dark:text-primary">
             About Me
           </h1>

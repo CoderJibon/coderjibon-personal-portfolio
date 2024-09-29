@@ -4,6 +4,7 @@ import { IoIosStar } from "react-icons/io";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect, useState } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 function ClientReview() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
@@ -12,12 +13,23 @@ function ClientReview() {
 
   if (!mounted) return null;
   return (
-    <div>
+    <div className="">
+      {/* Custom navigation buttons */}
+      <div className="swiper-button-prev-custom text-xl bg-success dark:bg-success text-white hover:text-darkyellow dark:hover:text-primary  p-2  rounded-full absolute right-16 top-4 z-10 cursor-pointer">
+        <FaArrowLeft />
+      </div>
+      <div className="swiper-button-next-custom text-xl top-4 bg-success dark:bg-success hover:text-darkyellow dark:hover:text-primary text-white p-2 rounded-full absolute right-6 z-10 cursor-pointer">
+        <FaArrowRight />
+      </div>
+
       <Swiper
-        navigation={true}
+        navigation={{
+          prevEl: ".swiper-button-prev-custom",
+          nextEl: ".swiper-button-next-custom",
+        }}
         loop={true} // Infinite loop
         autoplay={{
-          delay: 1000, // Slide delay (3 seconds)
+          delay: 3000, // Slide delay (3 seconds)
           disableOnInteraction: false, // Autoplay continues even after user interaction
         }}
         breakpoints={{
@@ -40,9 +52,9 @@ function ClientReview() {
       >
         {Reviews.map((r, i) => (
           <SwiperSlide key={i}>
-            <div className="bg-success dark:bg-gray-100 py-6 px-4 sm:px-10 min-h-[300px] rounded-lg flex items-center ">
-              <div className="text-center">
-                <div className="flex gap-1 text-lg text-darkyellow items-center justify-center mb-5">
+            <div className="bg-success dark:bg-gray-100 py-6 px-4 sm:px-10 min-h-[300px] rounded-lg flex items-center">
+              <div className="text-justify">
+                <div className="flex gap-1 text-lg text-darkyellow items-center justify-left mb-5">
                   <IoIosStar />
                   <IoIosStar />
                   <IoIosStar />
@@ -50,11 +62,11 @@ function ClientReview() {
                   <IoIosStar />
                 </div>
                 <div className="text-base mb-3">{r.review}</div>
-                <div className="flex gap-2 items-center justify-center ">
-                  <h6 className="text-base capitalize dark:text-success text-gray-300">
+                <div className="flex gap-2 items-center justify-left">
+                  <h6 className="text-base capitalize dark:text-success text-gray-300 font-semibold">
                     {r.user} -
                   </h6>
-                  <span className="text-xs capitalize dark:text-primary text-darkyellow">
+                  <span className="text-base font-semibold capitalize dark:text-primary text-darkyellow">
                     {r.country}
                   </span>
                 </div>
