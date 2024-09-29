@@ -3,6 +3,7 @@ import MainLayout from "../MainLayout";
 import Image from "next/image";
 import about from "@/public/images/animited/about.png";
 import ShopifyProjectCard from "@/components/ShopifyProjectCard/ShopifyProjectCard";
+import { ShopifyProject } from "@/data/ShopifyProject";
 
 function shopifyPage() {
   return (
@@ -97,12 +98,9 @@ function shopifyPage() {
           id="project"
           className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 md:gap-5"
         >
-          <ShopifyProjectCard />
-          <ShopifyProjectCard />
-          <ShopifyProjectCard />
-          <ShopifyProjectCard />
-          <ShopifyProjectCard />
-          <ShopifyProjectCard />
+          {ShopifyProject.map((project, i) => (
+            <ShopifyProjectCard key={i} project={project} />
+          ))}
         </div>
       </BGBox>
     </>
