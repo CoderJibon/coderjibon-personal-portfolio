@@ -59,4 +59,34 @@ export const ShopifyProject = [
     image: "/shopify/cphgrooming.png",
     name: "cphgrooming website Clone & development",
   },
+  {
+    url: "//bleame.com/",
+    image: "/shopify/bleame.png",
+    name: "bleame website Clone ",
+  },
+  {
+    url: "//www.caviarmangourmet.com/",
+    image: "/shopify/caviarmangourmet.png",
+    name: "caviarmangourmet website Clone & development",
+  },
+  {
+    url: "//www.sundayblankets.com/",
+    image: "/shopify/sundayblankets.png",
+    name: "sundayblankets website development",
+  },
+  {
+    url: "//corinthianscorner.com/",
+    image: "/shopify/corinthianscorner.png",
+    name: "corinthianscorner website development",
+  },
+  {
+    url: "//theoodie.com/",
+    image: "/shopify/theoodie.png",
+    name: "theoodie website development",
+  },
+  {
+    url: "//zerode.eu",
+    image: "/shopify/zerode.png",
+    name: "zerode Shopify website migration",
+  },
 ];

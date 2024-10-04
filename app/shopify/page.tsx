@@ -14,9 +14,10 @@ function shopifyPage() {
             Shopify Expert
           </h2>
           <p className="text-base mb-4">
-            As a <span className="font-semibold">Shopify expert</span>, I
-            specialize in creating and customizing online stores that deliver
-            exceptional shopping experiences. My skills encompass:
+            As a <span className="font-semibold">Shopify expert</span>, II
+            specialize in rebuilding, Figma to Shopify, creating customizing,
+            copying, and cloning any online store that delivers exceptional
+            shopping experiences. My skills encompass:
           </p>
 
           <ul className="list-disc list-inside mb-6 text-base">
