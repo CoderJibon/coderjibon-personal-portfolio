@@ -16,7 +16,7 @@ type projectProps = {
 function ProjectCard({ project }: { project: projectProps }) {
   return (
     <div className="relative overflow-hidden group rounded-tl-lg rounded-tr-lg">
-      <Link target="_blank" href={"/"}>
+      <Link target="_blank" href={project.liveLink}>
         <div className="max-h-[300px] overflow-hidden">
           <Image
             className="transform hover:translate-y-[-100px] rounded-tl-lg transition-transform duration-[2000ms] rounded-tr-lg w-full"
@@ -29,14 +29,14 @@ function ProjectCard({ project }: { project: projectProps }) {
       </Link>
       <Link
         className="flex md:-mr-28 md:group-hover:mr-0 duration-700  absolute top-2 right-2 md:text-base text-xs  gap-1 dark:bg-primary bg-darkyellow px-2 py-1 rounded-tr-2xl transition-all hover:scale-110 text-success rounded-bl-2xl items-center dark:text-white"
-        href={"/"}
+        href={project.liveLink}
       >
         Visit Site{" "}
         <GoArrowUpRight className="text-xl text-blue-700 dark:text-white" />
       </Link>
       <Link
         className="flex md:-mt-28 md:group-hover:mt-0 duration-700 absolute top-2 left-2 text-base gap-1 bg-darkyellow dark:bg-primary px-2 py-1 rounded-tr-2xl transition-all hover:scale-110 text-success rounded-bl-2xl items-center dark:text-white"
-        href={"/"}
+        href={project.sourceFile}
       >
         <FaGithub className="text-2xl " />
       </Link>
