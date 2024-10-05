@@ -6,7 +6,13 @@ export const AppData = [
     desc: "",
     shortDesc: "Build in React",
     image: "/ReactAndNext/infected-bodies.png",
-    skill: ["react", "react-bootstrap", "react-scroll", "react-icons"],
+    skill: [
+      "react",
+      "react-router-dom",
+      "react-bootstrap",
+      "react-scroll",
+      "react-icons",
+    ],
   },
   {
     name: "wdw shop website Development",
@@ -17,6 +23,31 @@ export const AppData = [
     image: "/ReactAndNext/wdw-shop-nextj.png",
     skill: ["Next js", "Tailwind css", "typescript", "react redux Toolkit"],
   },
+  {
+    name: "food link corporate website design",
+    sourceFile: "//github.com/CoderJibon/foodlink-corporate",
+    liveLink: "//foodlinkcorporate.web.app/",
+    desc: "",
+    shortDesc: "Build in React",
+    image: "/ReactAndNext/foodlinkcorporate.png",
+    skill: ["React", "react-router-dom", "react-spinners", "slick-carousel"],
+  },
+  {
+    name: "education website website design",
+    sourceFile: "//github.com/CoderJibon/education-website",
+    liveLink: "//wizardly-tesla-a930dd.netlify.app/",
+    desc: "",
+    shortDesc: "Build in React",
+    image: "/ReactAndNext/education-website.png",
+    skill: [
+      "React",
+      "react-router-dom",
+      "bootstrap",
+      "bootstrap-icons",
+      "react-scripts",
+    ],
+  },
+
   {
     name: "littleones Landing page Design",
     sourceFile: "//github.com/CoderJibon/littleones",
