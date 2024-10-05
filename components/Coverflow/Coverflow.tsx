@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import { EffectCoverflow, Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
+import { AppData } from "@/data/AppData";
 function Coverflow() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
@@ -45,27 +46,11 @@ function Coverflow() {
         modules={[EffectCoverflow, Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
+        {AppData.slice(0, 6).map((item, i) => (
+          <SwiperSlide key={i}>
+            <ProjectCard project={item} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
