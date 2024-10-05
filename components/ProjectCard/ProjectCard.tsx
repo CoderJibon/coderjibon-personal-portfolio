@@ -41,7 +41,9 @@ function ProjectCard({ project }: { project: projectProps }) {
         <FaGithub className="text-2xl " />
       </Link>
       <div className="bg-success dark:bg-gray-100 rounded-tl-none rounded-tr-none rounded-bl-lg rounded-br-lg pb-4 px-4">
-        <h2 className="text-center pt-2 pb-1 text-[18px]">{project.name}</h2>
+        <h2 className="text-center pt-2 pb-1 text-[18px] capitalize ">
+          {project.name}
+        </h2>
         {project.shortDesc && (
           <div className="text-gray-400 text-center ">{project.shortDesc}</div>
         )}
