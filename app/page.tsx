@@ -69,7 +69,7 @@ export default function Home() {
       {/* MyServices */}
       <BGBox>
         <h2 className="text-2xl sm:text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold capitalize ">
-          my expectations
+          my expertise
         </h2>
         <MyServices />
       </BGBox>
