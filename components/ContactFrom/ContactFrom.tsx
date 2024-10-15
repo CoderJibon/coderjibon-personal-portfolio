@@ -24,7 +24,7 @@ function ContactFrom() {
             showConfirmButton: true,
             timer: 2000,
           });
-          e.currentTarget.reset();
+          form.current?.reset();
         },
         (error) => {
           console.log(error.text);
