@@ -68,8 +68,8 @@ export default function Home() {
       </BGBox>
       {/* MyServices */}
       <BGBox>
-        <h2 className="text-2xl sm:text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
-          My Quality Services
+        <h2 className="text-2xl sm:text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold capitalize ">
+          my expectations
         </h2>
         <MyServices />
       </BGBox>
@@ -82,7 +82,7 @@ export default function Home() {
       </BGBox>
       {/* Client Reviews*/}
       <BGBox className="relative mt-4">
-        <h2 className="text-2xl sm:text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
+        <h2 className="text-2xl sm:text-3xl mb-7 text-left md:text-center text-color dark:dark-text-color font-semibold ">
           What clients say!
         </h2>
         <ClientReview />

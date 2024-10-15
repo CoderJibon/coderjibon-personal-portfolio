@@ -61,9 +61,9 @@ export const Reviews = [
   },
   {
     review:
-      "Outstanding experience, explaining me everything, letting me know at every step, communicating and even helping after everything's done to make me understand !! What a Service !",
-    user: "ahmedbmk",
-    country: "France",
+      "This was the best experience! Everything was perfect. He worked very hard, delivered everything I needed, and even did more than what I paid for. He was always kind, constantly reaching out to ask if there was anything else he could do. I didn’t encounter a single problem during the process. I highly recommend him to everyone, and I promise you will be truly surprised by the quality of his work! That you so much! 🙏",
+    user: "lyoncandrian",
+    country: "Switzerland",
   },
   {
     review:

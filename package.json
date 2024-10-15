@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "next": "14.2.11",
     "next-themes": "^0.3.0",
     "react": "^18",
@@ -22,6 +23,7 @@
     "react-modern-drawer": "^1.4.0",
     "react-parallax-tilt": "^1.7.242",
     "sharp": "^0.33.5",
+    "sweetalert2": "^11.6.13",
     "swiper": "^11.1.14"
   },
   "devDependencies": {
