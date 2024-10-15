@@ -3,15 +3,20 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import Swal from "sweetalert2";
 function ContactFrom() {
-  const form = useRef<any>();
-  const sendEmail = (e: any) => {
+  const form = useRef<HTMLFormElement>(null);
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     emailjs
-      .sendForm("service_8y50w3c", "template_xbeub0q", form.current, {
-        publicKey: "OoKOvpmNSXplPGbsY",
-      })
+      .sendForm(
+        "service_8y50w3c",
+        "template_xbeub0q",
+        form.current as HTMLFormElement,
+        {
+          publicKey: "OoKOvpmNSXplPGbsY",
+        }
+      )
       .then(
-        (result) => {
+        () => {
           Swal.fire({
             position: "top-end",
             icon: "success",
@@ -19,7 +24,7 @@ function ContactFrom() {
             showConfirmButton: true,
             timer: 2000,
           });
-          e.target.reset();
+          e.currentTarget.reset();
         },
         (error) => {
           console.log(error.text);
