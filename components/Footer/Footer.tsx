@@ -1,12 +1,6 @@
 import Link from "next/link.js";
 import { FaLinkedin } from "react-icons/fa";
-import {
-  FaFacebook,
-  FaGithub,
-  FaSkype,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa6";
+import { FaGithub, FaSkype, FaWhatsapp, FaYoutube } from "react-icons/fa6";
 import Coffee from "../Coffee/Coffee";
 
 function Footer() {
@@ -32,13 +26,6 @@ function Footer() {
               href={"https://www.linkedin.com/in/coderjibon/"}
             >
               <FaLinkedin />
-            </Link>
-            <Link
-              className="text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"
-              target="_blank"
-              href={"https://www.facebook.com/coderroy/"}
-            >
-              <FaFacebook />
             </Link>
             <Link
               className="text-2xl hover:text-darkyellow transition text-gray-400 items-center dark:text-darkLight dark:hover:text-primary"

@@ -26,9 +26,10 @@ function AboutPage() {
             <span className="font-semibold">Next.js</span>, backed by robust
             server-side logic powered by{" "}
             <span className="font-semibold">Node.js</span> and{" "}
-            <span className="font-semibold">Express.js</span>, Prisma and
-            managing data with <span className="font-semibold">MongoDB</span>,{" "}
-            and <span className="font-semibold">MySQL</span>.
+            <span className="font-semibold">Express.js</span>, Prisma, Firebase
+            and managing data with{" "}
+            <span className="font-semibold">MongoDB</span>, or{" "}
+            <span className="font-semibold">MySQL</span>.
           </p>
 
           <p className="text-base mb-6">
@@ -76,12 +77,12 @@ function AboutPage() {
           <ul className=" list-none mb-6">
             <li className="text-base mb-2">
               ✔️ <span className="font-semibold">Frontend Development: </span>
-              React.js, Next.js, TypeScript, Redux Toolkit & Toolkit Query,
-              Tailwind CSS, Shadcn ui, Bootstrap, API integration
+              React.js, Next.js, TypeScript, Context API, Redux Toolkit &
+              Toolkit Query, Tailwind CSS, Shadcn ui, Bootstrap, API integration
             </li>
             <li className="text-base mb-2">
               ✔️ <span className="font-semibold">Backend Development:</span>{" "}
-              Node.js, Express.js, Prisma, MySQL, MongoDB, REST API
+              Node.js, Express.js, Prisma, MySQL, MongoDB, RestFul api
             </li>
             <li className="text-base mb-2">
               ✔️{" "}

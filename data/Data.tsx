@@ -13,11 +13,12 @@ import { MdWorkOutline } from "react-icons/md";
 import { RiHome6Line, RiTailwindCssFill } from "react-icons/ri";
 //skills icons
 import { IoLogoJavascript } from "react-icons/io";
-import { SiAdobexd, SiExpress } from "react-icons/si";
+import { SiAdobexd, SiExpress, SiMysql, SiPrisma } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandRedux } from "react-icons/tb";
 import { FaNode, FaReact } from "react-icons/fa6";
+import { IoLogoFirebase } from "react-icons/io5";
 
 export const Menu = [
   {
@@ -80,6 +81,11 @@ export const Skill = [
     label: "Mongodb",
   },
   {
+    id: 15,
+    icon: <SiMysql />,
+    label: "MySQL",
+  },
+  {
     id: 5,
     icon: <FaReact />,
     label: "React",
@@ -90,9 +96,19 @@ export const Skill = [
     label: "Next JS",
   },
   {
+    id: 6,
+    icon: <SiPrisma />,
+    label: "Prisma",
+  },
+  {
     id: 7,
     icon: <TbBrandRedux />,
     label: "Redux Toolkit",
+  },
+  {
+    id: 16,
+    icon: <IoLogoFirebase />,
+    label: "Firebase",
   },
   {
     id: 8,

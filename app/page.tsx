@@ -29,9 +29,9 @@ export default function Home() {
               I turn your ideas into reality, crafting unique web solutions that
               not only meet your needs but also inspire both you and your
               customers. With expertise in JavaScript, Node.js, React.js,
-              MongoDB, Express.js, REST APIs, Next.js, ReduxToolkit and Shopify
-              development, I am dedicated to delivering web projects that stand
-              out.
+              MongoDB or mysql, Express.js, Next.js, Context API, RESTful API,
+              ReduxToolkit, Prisma, Firebase and Shopify development, I am
+              dedicated to delivering web projects that stand out.
             </p>
 
             <div className="mt-0 lg:mt-5 flex flex-col-reverse lg:flex-row gap-3 lg:gap-5  lg:items-center">
