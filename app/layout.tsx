@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://coderjibon.vercel.app/preview.jpg", // Ensure this is the correct path to your image
+        url: "https://coderjibon.vercel.app/preview.png", // Ensure this is the correct path to your image
         width: 1200,
         height: 630,
         alt: "CoderJibon Preview Image",
