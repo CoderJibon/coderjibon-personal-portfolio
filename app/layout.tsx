@@ -42,11 +42,11 @@ export const metadata: Metadata = {
     title: "CoderJibon - Full-Stack MERN Developer",
     description:
       "👋 Hi, I'm Jibon Roy, a Full-Stack Developer specializing in MERN stack and building scalable, feature-rich applications. Check out my work!",
-    url: "https://coderjibon.web.app",
+    url: "https://coderjibon.vercel.app",
     type: "website",
     images: [
       {
-        url: "https://coderjibon.web.app/preview.jpg", // Ensure this is the correct path to your image
+        url: "https://coderjibon.vercel.app/preview.jpg", // Ensure this is the correct path to your image
         width: 1200,
         height: 630,
         alt: "CoderJibon Preview Image",
