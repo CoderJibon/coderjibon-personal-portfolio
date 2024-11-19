@@ -37,7 +37,29 @@ const Helvetica = localFont({
 export const metadata: Metadata = {
   title: "CoderJibon",
   description:
-    "👋 Hi, I'm Jibon Roy, a passionate and results-driven Full-Stack MERN Developer with expertise in creating feature-rich, scalable web applications. I specialize in building dynamic and intuitive user interfaces using React and Next.js, backed by robust server-side logic powered by Node.js and Express.js, Prisma and managing data with MongoDB, and MySQL.I have extensive experience across the full development stack, ensuring seamless integration between front-end and back-end systems. interactive UI or engineering high-performance API with technology combination enables me to build full-stack applications that efficiently handle data flow and user interactions, resulting in modern and feature-rich web experiences.",
+    "👋 Hi, I'm Jibon Roy, a Full-Stack Developer specializing in MERN stack and building scalable, feature-rich applications. Check out my work!",
+  openGraph: {
+    title: "CoderJibon - Full-Stack MERN Developer",
+    description:
+      "👋 Hi, I'm Jibon Roy, a Full-Stack Developer specializing in MERN stack and building scalable, feature-rich applications. Check out my work!",
+    url: "https://coderjibon.web.app",
+    type: "website",
+    images: [
+      {
+        url: "https://coderjibon.web.app/preview.jpg", // Ensure this is the correct path to your image
+        width: 1200,
+        height: 630,
+        alt: "CoderJibon Preview Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CoderJibon - Full-Stack MERN Developer",
+    description:
+      "👋 Hi, I'm Jibon Roy, a Full-Stack Developer specializing in MERN stack and building scalable, feature-rich applications. Check out my work!",
+    images: ["https://coderjibon.web.app/preview-image.jpg"], // Ensure this is the correct path to your image
+  },
 };
 export default function RootLayout({
   children,
